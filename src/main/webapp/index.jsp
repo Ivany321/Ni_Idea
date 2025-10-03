@@ -1,3 +1,22 @@
+<%--
+    JSP: PruebaLogro.jsp
+    Proyecto: ITESS-TICS - Proyecto Niidea
+    Fecha: 03/10/2025
+    Programador: Ivany Israel Rosas Torres
+    Descripción:
+        Esta página JSP crea instancias de las clases del proyecto (Logro, Alumnos,
+        Portafolio, Usuario, Coordinador, Familiar) y muestra sus datos en el navegador.
+        
+    Clases usadas:
+        - tics.itess.Logro
+        - tics.itess.Alumnos
+        - tics.itess.Portafolio
+        - tics.itess.Usuario
+        - tics.itess.Coordinador
+        - tics.itess.Familiar
+--%>
+
+
 <%@page import="tics.itess.Alumnos"%>
 <%@ page import="tics.itess.Logro" %>
 <%@ page import="tics.itess.Portafolio" %>
