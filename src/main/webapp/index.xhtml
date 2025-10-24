@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      lang="es">
+<h:head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Ni Idea</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1320;
+      --primary:#3ddc84;
+      --accent:#6c8cff;
+      --muted:#94a3b8;
+      --accent-2:#ffb86b;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      --maxw:1000px;
+      --fw-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg) 0%, #071019 100%);color:#e6eef8;font-family:var(--fw-sans);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;color:#02111a}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    nav a:hover{color:var(--accent)}
+    .hero{margin-top:28px;background:linear-gradient(180deg,var(--glass),transparent);padding:28px;border-radius:var(--radius);display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:center}
+    .hero h1{margin:0;font-size:28px;color:#fff}
+    .phrase{font-size:18px;color:var(--primary);margin-top:8px}
+    .hero p{color:var(--muted);line-height:1.5}
+    .card{background:linear-gradient(180deg,#071121, #07161e);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    section{margin-top:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .palette{display:flex;gap:10px;align-items:center}
+    .swatch{width:48px;height:48px;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .sw-info{font-size:13px;color:var(--muted);margin-left:8px}
+    footer{margin-top:36px;color:var(--muted);font-size:13px;text-align:center}
+    .cta{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#02111a;font-weight:600;text-decoration:none}
+    @media (max-width:720px){.hero{grid-template-columns:1fr}.logo{width:48px;height:48px}}
+  </style>
+</h:head>
+<h:body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">NI</div>
+        <div>
+          <div style="font-weight:700">NI</div>
+          <div style="font-size:13px;color:var(--muted)">NiIdea</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div>
+          <h1>Ni Idea - Midiendo el progreso, desarrollando programadores.</h1>
+          <div class="phrase">"Tu nivel de programación, nuestro punto de partida."</div>
+          <p>Esta herramienta ha sido desarrollada para medir y fortalecer las habilidades de programación de los alumnos.
+             A través de evaluaciones prácticas, podrás conocer tu nivel actual, detectar tus fortalezas y trabajar en las áreas que necesitan mejora.
+             ¡Descubre tu progreso y avanza hacia el dominio del código!</p>
+          <a class="cta" href="#contacto">Contáctanos</a>
+        </div>
+        <aside class="card">
+         
+          <p style="color:var(--muted);font-size:13px;margin-top:10px">Midiendo tu progreso, potenciando tu talento en programación.</p>
+        </aside>
+      </section>
+
+      <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Evaluación de habilidades</h3>
+            <p style="color:var(--muted)">Evalúa tu conocimiento en distintos lenguajes y niveles de programación.
+                Recibe resultados detallados sobre tus fortalezas y áreas por mejorar</p>
+          </div>
+          <div class="card">
+            <h3>Seguimiento de progreso</h3>
+            <p style="color:var(--muted)">Monitorea tu avance con estadísticas, puntajes y niveles.
+            Observa cómo crecen tus habilidades con cada prueba y reto completado.</p>
+          </div>
+          <div class="card">
+            <h3>Retos y ejercicios prácticos</h3>
+            <p style="color:var(--muted)">Participa en ejercicios diseñados para distintos niveles (básico, intermedio y avanzado).
+                Desarrolla tu pensamiento lógico y tus habilidades de resolución de problemas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos">
+        <h2>Evaluaciones</h2>
+        <div class="grid">
+          <div class="card">
+            <h4>Prueba de Fundamentos</h4>
+            <p style="color:var(--muted)">Evalúa tus conocimientos básicos de programación y lógica.</p>
+          </div>
+          <div class="card">
+            <h4>Reto Intermedio</h4>
+            <p style="color:var(--muted)">Pon a prueba tus habilidades con ejercicios más avanzados y escenarios reales.</p>
+          </div>
+          <div class="card">
+            <h4>Desafío Avanzado</h4>
+            <p style="color:var(--muted)">Demuestra tu dominio en problemas complejos y programación estructurada.</p>
+          </div>
+        </div>
+      </section>
+
+     
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> Ni Idea
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</h:body>
+</html>
